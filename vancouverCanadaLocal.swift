@@ -1,10 +1,3 @@
-//
-//  aaaa.swift
-//  
-//
-//  Created by 藤沢瞭介 on 2018/07/12.
-//
-
 import PerfectHTTP
 import PerfectHTTPServer
 import Foundation

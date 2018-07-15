@@ -10,9 +10,9 @@ let result_local: String  = """
     <html>
     <head>
     <meta charset="utf-8" />
-    <title>HTML 5 complete</title>
-    
+    <title>World Clock</title>
     </head>
+    
     <body>
     
     <h1>\(result_local_country)の時刻は下記です</h1>
@@ -20,7 +20,6 @@ let result_local: String  = """
     <h1>\(result_local_time)</h1>
     
     <style>
-    
     
     body {
     background: #f39c12;

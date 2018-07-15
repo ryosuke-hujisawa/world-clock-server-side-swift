@@ -3,20 +3,14 @@ import PerfectHTTPServer
 import Foundation
 
 
-func handler(request: HTTPRequest, response: HTTPResponse) {
+func specifyPosition(request: HTTPRequest, response: HTTPResponse) {
     
 	response.setHeader(.contentType, value: "text/html")
 	response.appendBody(string: "\(myLocatin)")
 	response.completed()
 }
 
-
-
-
-
-
-
-func handler2(request: HTTPRequest, response: HTTPResponse) {
+func currentLocation(request: HTTPRequest, response: HTTPResponse) {
 
     response.setHeader(.contentType, value: "text/html")
     let receivePostParams = request.postParams
@@ -80,13 +74,7 @@ if whichCountry.contains("VancouverCanada") {
    response.completed()
 }
 
-
-
-
-
-
-
-func handlerResult(request: HTTPRequest, response: HTTPResponse) {
+func specificResult(request: HTTPRequest, response: HTTPResponse) {
     
     response.setHeader(.contentType, value: "text/html")
 
@@ -109,29 +97,17 @@ func handlerResult(request: HTTPRequest, response: HTTPResponse) {
     response.completed()
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 let confData = [
 	"servers": [
 		[
 			"name":"localhost",
 			"port":8182,
 			"routes":[
-				["method":"get", "uri":"/", "handler":handler],
+				["method":"get", "uri":"/", "handler":specifyPosition],
                 
-                ["method":"post", "uri":"/test", "handler":handler2],
+                ["method":"post", "uri":"/CurrentLocation", "handler":currentLocation],
                 
-                ["method":"post", "uri":"/result", "handler":handlerResult],
+                ["method":"post", "uri":"/result", "handler":specificResult],
                 
 				["method":"get", "uri":"/**", "handler":PerfectHTTPServer.HTTPHandler.staticFiles,
 				 "documentRoot":"./webroot",

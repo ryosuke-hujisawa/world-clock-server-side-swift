@@ -1,25 +1,18 @@
 import PerfectHTTP
 import PerfectHTTPServer
 
-
-
 let myLocatin: String  = """
-
-
-
 
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8" />
-<title>HTML 5 complete</title>
+<title>World Clock</title>
 
 </head>
 <body>
 
-
-
-<form class="center-on-page" action="/PerfectTemplate/test" method="post">
+<form class="center-on-page" action="/PerfectTemplate/CurrentLocation" method="post">
 <h1>あなたの現在地は？</h1>
 <h5> What is your current location? </h5>
 <div class="select">
@@ -34,7 +27,6 @@ let myLocatin: String  = """
 </form>
 
 <style>
-
 
 body {
 background: #f39c12;
@@ -124,7 +116,6 @@ box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
 
 </body>
 </html>
-
 
 """
 

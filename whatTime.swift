@@ -10,15 +10,13 @@ let what_day: String  = """
     <html>
     <head>
     <meta charset="utf-8" />
-    <title>HTML 5 complete</title>
-    
+    <title>World Clock</title>
     </head>
     <body>
-
     <form class="center-on-page" action="/PerfectTemplate/result" method="post">
     <h1>下記が\(country)の現在時刻です</h1>
     <h5>current time of \(country)</h5>
-    
+
     <div class="boxContainer">
     <div class="select box">
     <select name="year">
@@ -206,32 +204,24 @@ let what_day: String  = """
     
     <style>
     
-    
     .box {
     float: left;
     }
-    
     .boxContainer {
     overflow: hidden;
     }
-    
-    /* clearfix */
     .boxContainer:before,
     .boxContainer:after {
     content: "";
     display: table;
     }
-    
     .boxContainer:after {
     clear: both;
     }
-    
     /* For IE 6/7 (trigger hasLayout) */
     .boxContainer {
     zoom: 1;
     }
-    
-    
     body {
     background: #f39c12;
     }
@@ -259,9 +249,6 @@ let what_day: String  = """
     background: #2c3e50;
     background-image: none;
     }
-    
-    
-    /* Custom Select */
     .select {
     position: relative;
     display: block;
@@ -272,7 +259,6 @@ let what_day: String  = """
     overflow: hidden;
     border-radius: .25em;
     }
-    
     .select_text {
     position: relative;
     display: block;
@@ -282,8 +268,6 @@ let what_day: String  = """
     overflow: hidden;
     border-radius: .25em;
     }
-    
-    
     select {
     width: 100%;
     height: 100%;
@@ -292,7 +276,6 @@ let what_day: String  = """
     color: #fff;
     cursor: pointer;
     }
-    
     select::-ms-expand {
     display: none;
     }
@@ -315,7 +298,6 @@ let what_day: String  = """
     -o-transition: .25s all ease;
     transition: .25s all ease;
     }
-    
     .fsSubmitButton
     {
     padding: 10px 15px 11px !important;
